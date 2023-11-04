@@ -6,6 +6,7 @@ At the core of this framework is the file Sequite.js, which contains the code
 that enables the framework's functionality.
 
 -> Project Structure
+
 The basic idea is that you have two important folders at the domain root:
 
 1. sequite_components
@@ -18,6 +19,7 @@ you can use any file in your web directory with a little
 tweak to the request syntax [not yet implemented]
 
 -> Basic Concepts
+
 Suppose we have 3 files:
 - Sequite.html
 - sequite_components/ABC.seq.htm
@@ -54,8 +56,8 @@ be later changed to resolve all tags of the document
 A single tag's resolution process looks like this:
 
 1. Check if the given tag is a Sequite component,
-    if yes => continue to step 2
-    if no  => jump to step 7
+<br>    if yes => continue to step 2
+<br>    if no  => jump to step 7
 2. Parse the injections of the given component
 3. Get the component's source (from server or cache)
 4. Apply the injections to the component's source
