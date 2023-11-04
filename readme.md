@@ -24,14 +24,14 @@ Suppose we have 3 files:
 - sequite_components/IMAGE/IMG.seq.htm
 
 Sequite.html contains the following 2 lines:
-	... <seq:ABC border="1" inject="{SRC}{images/cat.png}"></seq:ABC>
-		<script src="Sequite.js"></script> ...
+	... &lt;seq:ABC border="1" inject="{SRC}{images/cat.png}"&gt;&lt;/seq:ABC&gt;
+		&lt;script src="Sequite.js"&gt;&lt;/script&gt; ...
 
 and sequite_components/ABC.seq.htm looks like this:
-<div style="color: purple;">
-    <p> This is a basic Sequite query with injection (src = {SRC}) </p>
-    <seq:IMAGE:IMG src="{SRC}"></seq:IMAGE:IMG>
-</div>
+&lt;div style="color: purple;"&gt;
+    &lt;p&gt; This is a basic Sequite query with injection (src = {SRC}) &lt;/p&gt;
+    &lt;seq:IMAGE:IMG src="{SRC}"&gt;&lt;/seq:IMAGE:IMG&gt;
+&lt;/div&gt;
 
 We can observe some basic concepts of Sequite: components and injections.
 
