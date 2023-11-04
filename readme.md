@@ -51,7 +51,7 @@ before rendering it on the page.
 
 Resolution currently starts at the children of the body tag, which is to
 be later changed to resolve all tags of the document
-(including <html> and <head> & children).
+(including &lt;html&gt; and &lt;head&gt; & children).
 
 A single tag's resolution process looks like this:
 
